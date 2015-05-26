@@ -1,6 +1,12 @@
 ---
 ---
 
+$responsive-width-base: 600px
+
+*
+  margin: 0
+  padding: 0
+
 body
   background-color: #f0f0f0
 
@@ -11,13 +17,16 @@ a, a:visited
 a:hover
   text-decoration: underline
 
-.wrapper-page
+.wrapper-outer
   width: 100%
   max-width: 700px
   background-color: white
-  padding: 20px
   margin: 0 auto
+  margin-top: 10px
   margin-bottom: 60px
+
+.wrapper-inner
+  padding: 20px
 
 .post-title
   h2
@@ -31,15 +40,16 @@ a:hover
     letter-spacing: -0.04em
     margin-top: 40px
     padding-top: 0
-    margin-bottom: 30px
     color: rgba(0,0,0,0.8)
     text-align: center
 
 .post-divider
+  margin-top: 30px
+  margin-bottom: 20px
+  height: 1px
+  background-color: #eee
 
 .post-content
-  border-top: 1px solid #eee
-
   p
     font-family: "freight-text-pro",Georgia,Cambria,"Times New Roman",Times,serif
     letter-spacing: .01rem
@@ -66,3 +76,15 @@ footer
 
   .copyright
     float: right
+
+@media screen and (max-device-width: 650px)
+  
+  .wrapper-page
+    width: 100%
+
+  .post-title
+    h2
+      font-size: 30px
+  .post-content
+    p
+      font-size: 18px
