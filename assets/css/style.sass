@@ -1,7 +1,7 @@
 ---
 ---
 
-$responsive-width-base: 600px
+$base-padding: 20px
 
 *
   margin: 0
@@ -26,7 +26,7 @@ a:hover
   margin-bottom: 60px
 
 .wrapper-inner
-  padding: 20px
+  padding: $base-padding
 
 .post-title
   h2
@@ -84,7 +84,10 @@ footer
 
   .post-title
     h2
-      font-size: 30px
+      font-size: 28px
   .post-content
     p
       font-size: 18px
+
+  footer
+    padding: 15px $base-padding
