@@ -1,8 +1,13 @@
 {% include header.html %}
 
 <div class="wrapper wrapper-responsive wrapper-page">
-  <div data-ui="console"></div>
-  <div class="content">
+  <div class="post-title">
+    <h2>{{ page.title }}</h2>
+  </div>
+  <div class="post-divider"></div>
+  <div class="post-content">
     {{ content }}
   </div>
 </div>
+
+{% include footer.html %}
