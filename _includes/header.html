@@ -2,8 +2,10 @@
 <html>
   <head>
     <title>
-        {{ page.title }} - 时光小屋 - 给宝宝一辈子的礼物
+      {{ page.title }} - {% if page.lang == 'cn' %}时光小屋{% else %}時光小屋{% endif %}
     </title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="description" content="{{ page.excerpt }}" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
     <meta charset="utf-8"> 
     <link rel="stylesheet" media="screen" href="/assets/css/style.css?ts=20150526" />
